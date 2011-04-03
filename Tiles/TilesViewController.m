@@ -35,7 +35,7 @@
     
     NSLog(@"VIEW DID LOAD");
 
-    CGRect contentRect = CGRectMake(0, 0, 200, 4000);
+    CGRect contentRect = CGRectMake(0, 0, 100, 4000);
 
     TiledView * tiledView = [[[TiledView alloc] initWithFrame:contentRect] autorelease];
     [self.scrollView addSubview:tiledView];    
