@@ -17,10 +17,10 @@
 
 - (id) initWithFrame:(CGRect)frame {
     if ((self = [super initWithFrame:frame])) {
-        self.backgroundColor = [UIColor clearColor];
+        // self.backgroundColor = [UIColor clearColor];
         
         // Note you MUST call self.contentScaleFactor for THIS view, not for any parent view, because it is incorrect for parent views. 
-        [(CATiledLayer*)self.layer setTileSize:CGSizeMake(100 * self.contentScaleFactor, 100 * self.contentScaleFactor)];
+        // [(CATiledLayer*)self.layer setTileSize:CGSizeMake(100 * self.contentScaleFactor, 100 * self.contentScaleFactor)];
     }
     return self;
 }
