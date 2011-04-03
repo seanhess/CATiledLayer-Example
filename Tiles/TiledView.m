@@ -17,10 +17,10 @@
 
 - (id) initWithFrame:(CGRect)frame {
     if ((self = [super initWithFrame:frame])) {
-//        self.backgroundColor = [UIColor blueColor];
+        self.backgroundColor = [UIColor clearColor];
         
         // Note you MUST call self.contentScaleFactor for THIS view, not for any parent view, because it is incorrect for parent views. 
-//        [(CATiledLayer*)self.layer setTileSize:CGSizeMake(100 * self.contentScaleFactor, 100 * self.contentScaleFactor)];
+        [(CATiledLayer*)self.layer setTileSize:CGSizeMake(100 * self.contentScaleFactor, 100 * self.contentScaleFactor)];
     }
     return self;
 }
@@ -49,9 +49,9 @@
     CGRect rect = CGContextGetClipBoundingBox(ctx);
     NSLog(@"DRAW LAYER %@", NSStringFromCGRect(rect));
     
-//    CGContextSetFillColorWithColor(ctx, [UIColor redColor].CGColor);
-//    CGContextAddRect(ctx, CGRectMake(rect.origin.x + 2, rect.origin.y + 2, rect.size.width - 4, rect.size.height -4 ));
-//    CGContextFillPath(ctx);
+    CGContextSetFillColorWithColor(ctx, [UIColor redColor].CGColor);
+    CGContextAddRect(ctx, CGRectMake(rect.origin.x + 2, rect.origin.y + 2, rect.size.width - 4, rect.size.height -4 ));
+    CGContextFillPath(ctx);
     
 }
 
